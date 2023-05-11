@@ -6,6 +6,7 @@
 #include <fstream>
 #include <memory>
 #include <iostream>
+#include <cstdlib>
 #include <unordered_set>
 #include <Eigen/Dense>
 // goal, a tensor that does its own gradients
@@ -153,7 +154,7 @@ struct TensorImp
       d_rhs->d_val = d_rhs->d_val.unaryExpr(
                                             [&rate](float) -> float
                                             {
-                                              if(random() > rate * RAND_MAX) // "keep"
+                                              if(std::rand() > rate * RAND_MAX) // "keep"
                                                 return 1.0/(1 - rate);
                                               else return 0.0;
                                             });

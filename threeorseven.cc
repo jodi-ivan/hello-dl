@@ -8,8 +8,8 @@ using namespace std;
 
 int main()
 {
-  MNISTReader mn("gzip/emnist-digits-train-images-idx3-ubyte.gz", "gzip/emnist-digits-train-labels-idx1-ubyte.gz");
-  MNISTReader mntest("gzip/emnist-digits-test-images-idx3-ubyte.gz", "gzip/emnist-digits-test-labels-idx1-ubyte.gz");
+  MNISTReader mn("gzip/train-images-idx3-ubyte.gz", "gzip/train-labels-idx1-ubyte.gz");
+  MNISTReader mntest("gzip/test-images-idx3-ubyte.gz", "gzip/test-labels-idx1-ubyte.gz");
 
   cout << "Have "<<mn.num() << " training images and " << mntest.num() << " validation images." <<endl;
 

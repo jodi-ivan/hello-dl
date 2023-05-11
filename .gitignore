@@ -32,3 +32,12 @@ hello-dl
 *.exe
 *.out
 *.app
+
+#IDE settings
+.vscode/*
+
+# trained images
+*.png
+
+# data learning
+*.gz

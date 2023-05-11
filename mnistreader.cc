@@ -4,7 +4,11 @@
 #include <memory>
 #include <stdexcept>
 #include "zlib.h"
+#ifdef _WIN32
+#include <winsock2.h>
+#else
 #include <arpa/inet.h>
+#endif
 
 using namespace std;
 

@@ -1,0 +1,1 @@
+@g++ -I D:/Projects/Libraries/cpp/eigen -I D:\Projects\Libraries\cpp\zlib -fpermissive .\threeorseven.cc mnistreader.cc vizi.cc ext\sqlitewriter\sqlwriter.cc -o threeorseven -lws2_32 -lz -lsqlite3
